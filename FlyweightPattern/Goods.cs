@@ -9,24 +9,24 @@ namespace FlyweightPattern
 	/// <summary>
 	/// 商品类--具体享元角色
 	/// </summary>
-	public class Goods: IGoods
+	public class Goods:IGoods
 	{
-	private string name;//名称
-	private String version;//版本
-	Goods(string name)
-	{
-		this.name = name;
-	}
-	public void showGoodsPrice(String version)
-	{
-		if(version.Equals("32G"))
+		private string name;//名称
+		private string version;//版本
+		public Goods(string name)
 		{
-			Console.WriteLine("价格为5199元");
+			this.name = name;
 		}
-		else if(version.Equals("128G"))
+		public void showGoodsPrice(String version)
 		{
-			Console.WriteLine("价格为5999元");
+			if(version.Equals("32G"))
+			{
+				Console.WriteLine("价格为5199元");
+			}
+			else if(version.Equals("128G"))
+			{
+				Console.WriteLine("价格为5999元");
+			}
 		}
 	}
-}
 }
