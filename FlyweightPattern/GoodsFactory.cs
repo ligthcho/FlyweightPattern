@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace FlyweightPattern
 {
+	/// <summary>
+	/// 享元工厂
+	/// </summary>
 	public class GoodsFactory
 	{
 		private static Dictionary<String,Goods> pool = new Dictionary<String,Goods>();
@@ -13,6 +16,7 @@ namespace FlyweightPattern
 		{
 			if(pool.ContainsKey(name))
 			{
+				Console.WriteLine("-----------------");
 				Console.WriteLine("使用缓存,key为:" + name);
 				return pool[name];
 			}

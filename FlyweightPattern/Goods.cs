@@ -17,7 +17,7 @@ namespace FlyweightPattern
 		{
 			this.name = name;
 		}
-		public void showGoodsPrice(String version)
+		public void showGoodsPrice(string version)
 		{
 			if(version.Equals("32G"))
 			{
