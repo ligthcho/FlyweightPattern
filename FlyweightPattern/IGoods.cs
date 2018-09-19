@@ -11,6 +11,10 @@ namespace FlyweightPattern
 	/// </summary>
 	public interface IGoods
 	{
-	   void showGoodsPrice(string name);
+		/// <summary>
+		/// 用来展示商品的价格
+		/// </summary>
+		/// <param name="name"></param>
+		void showGoodsPrice(string name);
 	}
 }
